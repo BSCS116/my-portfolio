@@ -70,11 +70,17 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(Image/bg.jpg);
+   /* background-image: url(Image/bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+
+    justify-content: center;
+    background: linear-gradient(-45deg, #000000, #0f0f3d, #3a6cf4, #ffffff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+
 }
 
 .main .content{
@@ -784,6 +790,14 @@ section{
     font-size: 1.4em;
   }
 }
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 
 
