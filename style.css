@@ -77,14 +77,23 @@ section{
     background-attachment: fixed; */
 
     justify-content: center;
-    background: linear-gradient(-45deg, #000000, #0f0f3d, #3a6cf4, #ffffff);
+    background: linear-gradient(135deg, #0d0d0d, #1a1a3d, #5d00ff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 
 }
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 .main .content{
     max-width: 800px;
+    position: relative;
+    z-index: 1;
 }
 
 .main .content h2{
@@ -169,6 +178,9 @@ section{
 
 
 /* About */
+.about{
+    background: linear-gradient(135deg, #0d0d1a, #1e0047, #bf00ff);
+}
 
 .title{
     width: 100%;
@@ -257,7 +269,7 @@ section{
 /* Skills Section */
 
 .skills{
-    background-color: black;
+    background: linear-gradient(135deg, #050505, #1c1c2e, #00fff7);
 }
 
 .skills .content{
@@ -296,7 +308,7 @@ section{
     margin-bottom: 5px;
 }
 
-.skills .content .col-right .br .info span{
+.skills .content .col-right .bar .info span{
     font-size: 18px;
     font-weight: 500;
 }
@@ -344,7 +356,9 @@ section{
 }
 
 /* Services */
-
+.services{
+    background: linear-gradient(135deg, #0a0f1a, #00334d, #00ffc6);
+}
 .services .content{
     display: flex;
     justify-content: center;
@@ -408,7 +422,7 @@ section{
 /* Work */
 
 .work{
-    background-color: #000016;
+    background: linear-gradient(135deg, #1a001a, #3d003d, #ff00e5);
 }
 
 .work .content{
@@ -449,6 +463,10 @@ section{
 
 
 /* Contact */
+
+.contact{
+    background: linear-gradient(135deg, #0a0a0a, #111133, #00bfff);
+}
 
 .contact .content{
     display: flex;
@@ -562,7 +580,7 @@ section{
   /* Footer */
   
   .footer{
-    background: #000016;
+    background: linear-gradient(135deg, #050505, #1c1c2e, #00fff7);
     color: #fff;
     text-align: center;
     padding: 2em;
@@ -797,7 +815,3 @@ section{
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
-
-
-
