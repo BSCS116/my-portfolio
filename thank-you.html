@@ -8,16 +8,26 @@
   <!-- SweetAlert2 CDN -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
- 
+  <!-- Neon CSS Styling -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      height: 100vh;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a3d, #5d00ff);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      flex-direction: column;
     }
 
     .back-link {
@@ -27,27 +37,39 @@
 
     a {
       text-decoration: none;
-      background: #333;
+      background: #3a6cf4;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
+      font-size: 1em;
+      font-weight: 600;
       border-radius: 6px;
-      transition: 0.3s;
+      box-shadow: 0 0 10px #3a6cf4, 0 0 20px #3a6cf4;
+      transition: 0.3s ease;
     }
 
     a:hover {
-      background: #555;
+      background: #235bf6;
+      box-shadow: 0 0 15px #00fff7, 0 0 30px #00ffc6;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
   </style>
 </head>
 <body>
 
 <script>
-  // Show the success popup when the page loads
   Swal.fire({
     title: '🎉 Message Sent!',
     text: 'Thanks for contacting me. I’ll get back to you soon.',
     icon: 'success',
-    confirmButtonText: 'OK'
+    confirmButtonColor: '#3a6cf4',
+    confirmButtonText: 'OK',
+    background: '#111133',
+    color: '#ffffff'
   });
 </script>
 
